@@ -1,0 +1,5 @@
+.username__list {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}

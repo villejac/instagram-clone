@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #fafafa;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__posts {
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-around;
+}
+.app__headerImage {
+  width: 100px;
+  object-fit: contain;
+}
+.app__signup {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.post__users__box {
+  margin-top: 100px;
+}
+.users__heading {
+  margin-top: 50px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.login__info {
+  margin: 20px;
+}
+.login__notification {
+  text-align: center;
+}
+.notification__container {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.app__loginContainer {
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .post__users__box {
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 }
